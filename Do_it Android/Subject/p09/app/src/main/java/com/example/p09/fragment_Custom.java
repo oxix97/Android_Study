@@ -12,6 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class fragment_Custom extends Fragment {
     @Nullable
     @Override
@@ -22,14 +25,23 @@ public class fragment_Custom extends Fragment {
         EditText age = viewGroup.findViewById(R.id.editAge);
 
         Button button = viewGroup.findViewById(R.id.button);
+        Button birth = viewGroup.findViewById(R.id.Birth);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String s_name = name.getText().toString();
-                String s_age = age.getText().toString();
-                Toast.makeText(getContext(),s_name+"\n"+s_age, Toast.LENGTH_SHORT).show();
+                String s_name = "이름: "+name.getText().toString();
+                String s_age = "\n나이: "+age.getText().toString();
+                String s_date = "\n날짜: "+birth.getText().toString();
+
+                Toast.makeText(getContext(),s_name+s_age+s_date, Toast.LENGTH_SHORT).show();
             }
         });
+
+        Date date = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일");
+        String getTime = sdf.format(date);
+        birth.setText(getTime);
+
         return viewGroup;
     }
 }
