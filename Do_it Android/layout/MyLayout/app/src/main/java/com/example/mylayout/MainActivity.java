@@ -8,6 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Layout1 layout1;
+    private boolean clicked = true;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +24,13 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                layout1.setImage(R.drawable.profile1);
+                if(clicked){
+                    layout1.setImage(R.drawable.profile1);
+                    clicked=false;
+                }else{
+                    layout1.setImage(R.drawable.ic_launcher_foreground);
+                    clicked=true;
+                }
             }
         });
     }
