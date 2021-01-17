@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/rotate"
+        android:title="회전" />
+    <group >
+        <item
+            android:id="@+id/dog1"
+            android:checked="true"
+            android:title="흰둥이" />
+        <item
+            android:id="@+id/dog2"
+            android:checked="true"
+            android:title="정흰둥" />
+        <item
+            android:id="@+id/dog3"
+            android:checked="true"
+            android:title="사람" />
+    </group>
+</menu>
