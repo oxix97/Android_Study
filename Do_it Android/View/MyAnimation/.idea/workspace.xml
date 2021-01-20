@@ -7,14 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fcb00e7-c40a-4207-8520-b3da22c1eaec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MyList/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MyList/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/app/src/main/res/anim/close_animation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Subject/p16/app/src/main/res/anim/open_animation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Subject/p15/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Subject/p15/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Widget/Animation_Widget/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Widget/Animation_Widget/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Widget/Web/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Widget/Web/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +54,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$PROJECT_DIR$/../../../../Android_SDK" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyList" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MySlideView" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="ButtonPageSlide.app" />
@@ -115,9 +116,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -165,10 +164,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="504" y="11" key="CommitChangelistDialog2/-1920.-4.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1611049972749" />
-    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1611050550262">
+    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1611121622059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="687" y="216" key="FileChooserDialogImpl/-1920.-4.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1611050550262" />
+    <state x="687" y="216" key="FileChooserDialogImpl/-1920.-4.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1611121622059" />
     <state x="726" y="413" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611049980147">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
