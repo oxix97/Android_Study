@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout webLayout,menu;
     private Boolean isOpen = false;
     Animation left, right;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,7 +54,9 @@ public class MainActivity extends AppCompatActivity {
                 webLayout.startAnimation(right);
             }
         });
+
     }
+
     class SlideAnimation implements Animation.AnimationListener{
 
         @Override
