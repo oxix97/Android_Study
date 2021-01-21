@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 public class MainActivity extends AppCompatActivity {
     ProgressBar bar;
     int value;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
