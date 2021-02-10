@@ -1,27 +1,26 @@
 # Android_Study (Java) 
 
-- ### Layout
+- ### [Layout](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/layout)
     - FrameLayout
     - LinearLayout
     - RelativeLayout
     - ScrollView
     - TableLayout
-    
-
-- ### Event
+  
+- ### [Event](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Event)
   - AlertMessage
   - Toast
   - ProgressBar
   - TouchEvent
     
-- ### View
+- ### [View](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/View) 
   - View
   - SlideView
   - Animation
   - List
   - Spinner
     
-- ### Widget
+- ### [Widget](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Widget)
   - Button
   - TextView  
   - EditText
@@ -37,12 +36,12 @@
   - SelectWidget
   - SharedPreferences
 
-- ### Fragment
+- ### [Fragment](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Fragment)
   - Fragement
   - Fragment_basic
   - Fragment_basic2
     
-- ### Intent
+- ### [Intent](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Intent)
   - Inflate
   - Intent_basic
   - LoginActivity
@@ -50,18 +49,18 @@
   - WebView
   - WebView_Toast
     
-- ### OptionMenu
+- ### [OptionMenu](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/optionMenu)
   - ActionBar
   - Drawer
   - Tab
   - Tab2
   - View Pager
     
-- ### Service
+- ### [Service](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Service)
   - BroadCast
   - MyService
     
-- ### Thread
+- ### [Thread](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Thread)
   - AsyncTask
   - Http
   - Thread
@@ -69,7 +68,7 @@
   - Socket
   - Volley  
     
-- ### Subject
+- ### [Subject](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Subject)
     - prob_03
     - prob_04
     - prob_05
