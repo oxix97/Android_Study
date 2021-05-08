@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.NumberPicker
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import org.w3c.dom.Text
 
@@ -83,8 +84,25 @@ class MainActivity : AppCompatActivity() {
             textView.isVisible = true
             textView.text = numberPicker.value.toString()
 
+            setNumberBackground(numberPicker.value, textView)
+
             pickNumberSet.add(numberPicker.value)
 
+        }
+    }
+
+    private fun setNumberBackground(number: Int, textView: TextView) {
+        when (number) {
+            in 1..9 ->
+                textView.background = ContextCompat.getDrawable(this, R.drawable.yellow)
+            in 10..19 ->
+                textView.background = ContextCompat.getDrawable(this, R.drawable.blue)
+            in 20..29 ->
+                textView.background = ContextCompat.getDrawable(this, R.drawable.red)
+            in 30..39 ->
+                textView.background = ContextCompat.getDrawable(this, R.drawable.gray)
+
+            else -> textView.background = ContextCompat.getDrawable(this, R.drawable.green)
         }
     }
 
@@ -92,10 +110,12 @@ class MainActivity : AppCompatActivity() {
         runButton.setOnClickListener {
             val list = getRandomNumber()
             didRun = true
-            list.forEachIndexed{
-                index, number -> val textView = numberTextViewList[index]
+            list.forEachIndexed { index, number ->
+                val textView = numberTextViewList[index]
                 textView.text = number.toString()
                 textView.isVisible = true
+
+                setNumberBackground(number, textView)
             }
         }
     }
@@ -111,7 +131,7 @@ class MainActivity : AppCompatActivity() {
         }
         numberList.shuffle()
 
-        val newList = pickNumberSet.toList() + numberList.subList(0,6 - pickNumberSet.size)
+        val newList = pickNumberSet.toList() + numberList.subList(0, 6 - pickNumberSet.size)
         return newList.sorted()
     }
 
