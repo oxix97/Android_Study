@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lotto</string>
+    <string name="start">시작</string>
+    <string name="reset">초기화</string>
 </resources>
