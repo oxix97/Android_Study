@@ -85,6 +85,7 @@
                  android:background="@android:color/transparent"
                  android:src="@drawable/github"
     />
+
     <androidx.core.widget.NestedScrollView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -133,11 +134,8 @@
                       android:text="안녕하세요 이종찬입니다."
                       android:textSize="28sp"
                       android:layout_margin="30dp"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                      android:text="안녕하세요 이종찬입니다."
-                      android:textSize="28sp"
-                      android:layout_margin="30dp"/>
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
                       android:text="안녕하세요 이종찬입니다."
                       android:textSize="28sp"
                       android:layout_margin="30dp"/>

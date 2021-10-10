@@ -10,10 +10,11 @@ import com.example.project1.databinding.ActivitySignUpBinding
 
 class SignUpActivity : AppCompatActivity() {
     private lateinit var binding: ActivitySignUpBinding
+
     private fun textNullChecker(): Boolean {
-        if (binding.etName.text.length.toString() == "0" || binding.etId.text.length.toString() == "0" || binding.etPw.text.length.toString() == "0")
-            return false
-        return true
+        if (!binding.etName.text.isNullOrBlank()&& !binding.etId.text.isNullOrBlank() && !binding.etPw.text.isNullOrBlank())
+            return true
+        return false
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,6 +28,7 @@ class SignUpActivity : AppCompatActivity() {
                 intent.putExtra("setId", binding.etId.text.toString())
                 intent.putExtra("setPw", binding.etPw.text.toString())
                 setResult(RESULT_OK, intent)
+                Toast.makeText(this,"회원가입이 완료 되었습니다.",Toast.LENGTH_SHORT).show()
                 finish()
             } else {
                 Toast.makeText(this, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT).show()
