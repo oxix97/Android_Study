@@ -14,25 +14,30 @@ import org.w3c.dom.Text
 class MainActivity : AppCompatActivity() {
 
     private val clearButton: Button by lazy {
+        //초기화 버튼
         findViewById(R.id.reset)
     }
 
     private val addButton: Button by lazy {
+        // 숫자 선택 버튼
         findViewById(R.id.addButton)
     }
 
     private val runButton: Button by lazy {
+        //버튼 누르면 숫자 랜덤생성
         findViewById(R.id.runButton)
     }
 
     private val numberPicker: NumberPicker by lazy {
+        //1~45 까지 있는 numberPicker
         findViewById(R.id.numberPicker)
     }
 
-    private val pickNumberSet = hashSetOf<Int>()
-    private var didRun = false
+    private val pickNumberSet = hashSetOf<Int>() // numberPicker 초기화
+    private var didRun = false // 초기 false 화면에 아무것도 안보임
 
     private val numberTextViewList: List<TextView> by lazy {
+        //textView를 List로 변경하고 가져오기
         listOf<TextView>(
             findViewById(R.id.textView1),
             findViewById(R.id.textView2),

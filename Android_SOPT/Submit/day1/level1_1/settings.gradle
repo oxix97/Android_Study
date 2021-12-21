@@ -1,0 +1,2 @@
+rootProject.name = "androidLevel1"
+include ':app'
