@@ -1,7 +1,0 @@
-# Resource
-
----
-- DPI
-- dp
-- sp
-- 
