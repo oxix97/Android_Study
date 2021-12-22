@@ -4,36 +4,43 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Button" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Button" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Calculator" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Calculator" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Drawable" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Drawable" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/FrameLayout" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
@@ -42,8 +49,10 @@
             <option value="$PROJECT_DIR$/20-2_Android/FrameLayout" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Layout" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
@@ -52,98 +61,119 @@
             <option value="$PROJECT_DIR$/20-2_Android/Layout" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/MyApplication" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/MyApplication" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Project10_1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Project10_1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Project4_2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Project4_2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Project7_3" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Project7_3" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Test5_4" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Test5_4" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Test5_5" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Test5_5" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Test7_2" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Test7_2" />
+            <option value="$PROJECT_DIR$/20-2_Android/Test7_2/app" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/Text7_3" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/Text7_3" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/TextView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/TextView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/android_first" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
@@ -152,18 +182,22 @@
             <option value="$PROJECT_DIR$/20-2_Android/android_first" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/assignment6_7" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/assignment6_7" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/prob4_8" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
@@ -172,68 +206,82 @@
             <option value="$PROJECT_DIR$/20-2_Android/prob4_8" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project10" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project10" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project10_intent" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project10_intent" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project11/practice1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project11/practice1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project11/practice11_2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project11/practice11_2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project11/practice11_poster" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project11/practice11_poster" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project4_4" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project4_4" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project5_2" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
@@ -242,736 +290,884 @@
             <option value="$PROJECT_DIR$/20-2_Android/project5_2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project6_1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project6_1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/practice1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/practice1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/practice2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/practice2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/practice2(java)" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/practice2(java)" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/practice7_3" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/practice7_3" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/project_Alert" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/project_Alert" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/project_Alert2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/project_Alert2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7/project_Toast1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7/project_Toast1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7_1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7_1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/project7_1(java)" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/project7_1(java)" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/scrollView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/scrollView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/20-2_Android/test7_1" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/20-2_Android/test7_1" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/BasicApp/BMI_Calulator" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/BasicApp/BMI_Calulator" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/BasicApp/Lotto" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/BasicApp/Lotto" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/BasicApp/Lotto2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/BasicApp/Lotto2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/BasicApp/SecretDiary" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/BasicApp/SecretDiary" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Event/AlertMessage" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Event/AlertMessage" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Event/Toast" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Event/Toast" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Event/TouchEvent" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Event/TouchEvent" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Event/prob05" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Event/prob05" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Event/progressBar" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Event/progressBar" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Fragment/Fragment2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Fragment/Fragment2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Fragment/Fragment_basic" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Fragment/Fragment_basic" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/LoginActivity" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/LoginActivity" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/Number8" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/Number8" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/Parcelable" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/Parcelable" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/fragment" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/fragment" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/inflate" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/inflate" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/intent_basic" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/intent_basic" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/webView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/webView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Intent/webViewTest" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Intent/webViewTest" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Service/BroadCast" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Service/BroadCast" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Service/MyService" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Service/MyService" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Subject/p09" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Subject/p09" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Subject/p10" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Subject/p10" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Subject/p15" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Subject/p15" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Subject/p16" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Subject/p16" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Thread/AsyncTask/MyAsyncTask" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Thread/AsyncTask/MyAsyncTask" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Thread/MyHttp" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Thread/MyHttp" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Thread/MyThread" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Thread/MyThread" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Thread/MyThreadAnimation" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Thread/MyThreadAnimation" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Thread/Socket/MySocket" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Thread/Socket/MySocket" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Thread/Volley" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Thread/Volley" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/View/MyList" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/View/MyList" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/View/MySlideView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/View/MySlideView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/View/MySpinner" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/View/MySpinner" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/View/MyView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/View/MyView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/Animation_Widget" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/Animation_Widget" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/Button_Widget" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/Button_Widget" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/DrawableWidget" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/DrawableWidget" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/EditText_Widget" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/EditText_Widget" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/ImageButton_View" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/ImageButton_View" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/ListView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/ListView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/NavigationMenu" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/NavigationMenu" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/SeekBar" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/SeekBar" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/SelectWidget" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/SelectWidget" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/SharedPreferences" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/SharedPreferences" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/Text_Widget" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/Text_Widget" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/Web" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/Web" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/imageView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/imageView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/Widget/keyPad" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/Widget/keyPad" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/Do_it_03" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/Do_it_03" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/Do_it_04" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/Do_it_04" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/FrameLayout" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/FrameLayout" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/MyLayout" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/MyLayout" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/RelativeLayout" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/RelativeLayout" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/ScrollView" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/ScrollView" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/layout/TableLayout" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/layout/TableLayout" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/optionMenu/ActionBar" />
         <option name="gradleJvm" value="adopt-openjdk-14" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/optionMenu/ActionBar" />
+            <option value="$PROJECT_DIR$/Do_it Android/optionMenu/ActionBar/app" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/optionMenu/Drawer" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/optionMenu/Drawer" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/optionMenu/Tab" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/optionMenu/Tab" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/optionMenu/Tab2" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/optionMenu/Tab2" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/Do_it Android/optionMenu/ViewPager" />
-        <option name="gradleJvm" value="adopt-openjdk-14" />
+        <option name="gradleJvm" value="adopt-openjdk-14 (2)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/Do_it Android/optionMenu/ViewPager" />
           </set>
         </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
