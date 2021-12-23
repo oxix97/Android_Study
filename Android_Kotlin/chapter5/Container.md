@@ -152,3 +152,19 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.Holder>() {
 ---
 #### 목록 클릭 이벤트 처리
 
+> 홀더가 가지고 있는 아이템뷰에 클릭리스너를 달면 해당 목록이 클릭될 때 마다 리스너가 실행된다.
+
+```kotlin
+   class Holder(private val binding: ItemRecyclerBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+    init {
+        binding.root.setOnClickListener {
+            Toast.makeText(
+                binding.root.context,
+                "클릭된 아이템: ${binding.tvNo.text}번째 아이템",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
+}
+```
