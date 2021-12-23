@@ -2,6 +2,7 @@ package com.example.chapter5.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.chapter5.data.RecyclerViewData
 import com.example.chapter5.databinding.ItemRecyclerBinding
@@ -13,6 +14,16 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.Holder>() {
 
     class Holder(private val binding: ItemRecyclerBinding) :
         RecyclerView.ViewHolder(binding.root) {
+        init {
+            binding.root.setOnClickListener {
+                Toast.makeText(
+                    binding.root.context,
+                    "클릭된 아이템: ${binding.tvNo.text}번째 아이템",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
         fun setMemo(data: RecyclerViewData) {
             binding.tvNo.text = "${data.no}"
             binding.tvTitle.text = "${data.title}"
@@ -25,6 +36,7 @@ class CustomAdapter : RecyclerView.Adapter<CustomAdapter.Holder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val binding =
             ItemRecyclerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+
         return Holder(binding)
     }
 
