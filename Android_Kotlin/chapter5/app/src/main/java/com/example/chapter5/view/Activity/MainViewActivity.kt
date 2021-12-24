@@ -23,11 +23,16 @@ class MainViewActivity : AppCompatActivity() {
         transaction.add(R.id.fr_container, oneFragment)
         transaction.commit()
     }
-    private fun nextFragment() {
-        val twoFragment : TwoFragment = TwoFragment()
+
+    fun nextFragment() {
+        val twoFragment: TwoFragment = TwoFragment()
         val transaction = supportFragmentManager.beginTransaction()
-        transaction.add(R.id.fr_container,twoFragment)
+        transaction.replace(R.id.fr_container, twoFragment)
         transaction.addToBackStack("two")
         transaction.commit()
+    }
+
+    fun goBack() {
+        onBackPressed()
     }
 }
