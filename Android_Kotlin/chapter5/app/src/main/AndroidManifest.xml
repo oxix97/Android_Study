@@ -10,16 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chapter5">
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".view.Activity.MainViewActivity"
             android:exported="true" />
         <activity
-            android:name=".SpinnerActivity"
+            android:name=".view.Activity.RecyclerViewActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+            android:name=".view.Activity.SpinnerActivity"
+            android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".view.Activity.MainActivity2"
+            android:exported="true" />
+        <activity
+            android:name=".view.Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

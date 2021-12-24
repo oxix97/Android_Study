@@ -1,11 +1,9 @@
-package com.example.chapter5
+package com.example.chapter5.view.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.chapter5.databinding.ActivityMain2Binding
-import kotlin.concurrent.thread
 
 class MainActivity2 : AppCompatActivity() {
     private lateinit var binding: ActivityMain2Binding
