@@ -19,6 +19,11 @@ class MainViewActivity : AppCompatActivity() {
 
     private fun setFragment() {
         val oneFragment: OneFragment = OneFragment()
+
+        var bundle = Bundle()
+        bundle.putString("key1", "FirstFragment")
+        oneFragment.arguments = bundle
+        
         val transaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.fr_container, oneFragment)
         transaction.commit()

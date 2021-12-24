@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Chapter5">
         <activity
+            android:name=".view.Activity.Peer"
+            android:exported="false" />
+        <activity
             android:name=".view.Activity.MainViewActivity"
             android:exported="true" />
         <activity

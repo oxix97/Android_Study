@@ -20,6 +20,7 @@ class OneFragment : Fragment() {
         binding.btnNext.setOnClickListener {
             mainActivity?.nextFragment()
         }
+        binding.tvText.text = arguments?.getString("key1")
         return binding.root
     }
 
