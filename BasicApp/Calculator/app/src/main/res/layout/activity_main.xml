@@ -153,7 +153,7 @@
                 android:background="@drawable/button_background"
                 android:onClick="buttonClicked"
                 android:stateListAnimator="@null"
-                android:text="X"
+                android:text="x"
                 android:textColor="@color/green"
                 android:textSize="24sp" />
         </TableRow>

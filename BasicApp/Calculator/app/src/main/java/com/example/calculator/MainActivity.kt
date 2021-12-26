@@ -9,6 +9,7 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import com.example.calculator.databinding.ActivityMainBinding
+import kotlin.math.exp
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
             return
         }
         binding.tvExpression.append(number)
+        binding.tvResultView.text = calculateExpression()
     }
 
     private fun operatorButtonClicked(operator: String) {
@@ -88,15 +90,47 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun clearButtonClicked(v: View) {
-
+        binding.tvExpression.text = ""
+        binding.tvResultView.text = ""
+        isOperator = false
+        hasOperator = false
     }
 
     fun resultButtonClicked(v: View) {
 
     }
 
+    private fun calculateExpression(): String {
+        val expressionText = binding.tvExpression.text.split(" ")
+        if (hasOperator.not() || expressionText.size != 3) {
+            return ""
+        } else if (expressionText[0].isNumber().not() || expressionText[2].isNumber().not()) {
+            return ""
+        }
+        val exp1 = expressionText[0].toBigInteger()
+        val exp2 = expressionText[2].toBigInteger()
+
+        return when (expressionText[1]) {
+            "+" -> (exp1 + exp2).toString()
+            "-" -> (exp1 - exp2).toString()
+            "*" -> (exp1 * exp2).toString()
+            "/" -> (exp1 / exp2).toString()
+            "%" -> (exp1 % exp2).toString()
+            else -> ""
+        }
+    }
+
     private fun historyButtonClicked(v: View) {
 
     }
 
+    private fun String.isNumber(): Boolean {
+        return try {
+            this.toBigInteger()
+            true
+        } catch (e: NumberFormatException) {
+            false
+        }
+    }
 }
+
