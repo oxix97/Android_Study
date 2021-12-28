@@ -91,13 +91,18 @@ class MainActivity : AppCompatActivity() {
 
     fun clearButtonClicked(v: View) {
         binding.tvExpression.text = ""
-        binding.tvResultView.text = ""
-        isOperator = false
-        hasOperator = false
+        clearText()
     }
 
     fun resultButtonClicked(v: View) {
+        binding.tvExpression.text = binding.tvResultView.text
+        clearText()
+    }
 
+    private fun clearText() {
+        binding.tvResultView.text = ""
+        isOperator = false
+        hasOperator = false
     }
 
     private fun calculateExpression(): String {
