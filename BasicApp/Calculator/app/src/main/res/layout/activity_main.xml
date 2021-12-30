@@ -83,9 +83,9 @@
                 android:textSize="24sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_modulo"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/btn_modulo"
                 android:layout_margin="7dp"
                 android:background="@drawable/button_background"
                 android:onClick="buttonClicked"
@@ -95,12 +95,12 @@
                 android:textSize="24sp" />
 
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_divide"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:id="@+id/btn_divide"
                 android:layout_margin="7dp"
                 android:background="@drawable/button_background"
-                android:onClick="buttonClicked"
+                android:onClick="historyCloseClicked"
                 android:stateListAnimator="@null"
                 android:text="/"
                 android:textColor="@color/green"
@@ -289,8 +289,8 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_."
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="77dp"
+                android:layout_height="62dp"
                 android:layout_margin="7dp"
                 android:background="@drawable/button_background"
                 android:clickable="false"
@@ -312,8 +312,66 @@
                 android:textColor="@color/white"
                 android:textSize="24sp" />
         </TableRow>
-
     </TableLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/ll_historyLayout"
+        android:background="#FFFFF3"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tl_keypadLayout"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="historyCloseClicked"
+            android:text="닫기"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ScrollView
+            android:id="@+id/sv_stack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_historyClear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_close">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_historyRow"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_historyClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_background_green"
+            android:onClick="historyClearClicked"
+            android:stateListAnimator="@null"
+            android:text="기록 삭제"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
