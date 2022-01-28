@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             "historyDB"
         ).build()
 
-
     }
 
     fun buttonClicked(v: View) {
@@ -131,7 +130,6 @@ class MainActivity : AppCompatActivity() {
         val text = binding.tvExpression.text.toString()
         val result = calculateExpression()
 
-
         Thread(
             Runnable {
                 db.historyDao().insertHistory(History(null, text, result))
@@ -176,7 +174,6 @@ class MainActivity : AppCompatActivity() {
         binding.llHistoryLayout.isVisible = false
     }
 
-
     fun historyButtonClicked(v: View) {
         binding.llHistoryLayout.isVisible = true
         binding.llHistoryRow.removeAllViews()
@@ -185,7 +182,9 @@ class MainActivity : AppCompatActivity() {
             db.historyDao().getAll().reversed().forEach {
                 runOnUiThread {
                     val historyView =
-                        LayoutInflater.from(this).inflate(R.layout.history_row, null, false)
+                        LayoutInflater
+                            .from(this)
+                            .inflate(R.layout.history_row, null, false)
                     historyView.findViewById<TextView>(R.id.tv_expression).text = it.expression
                     historyView.findViewById<TextView>(R.id.tv_resultView).text = "= ${it.result}"
                     binding.llHistoryRow.addView(historyView)
