@@ -39,8 +39,8 @@ class RecyclerAdapter : RecyclerView.Adapter<RecyclerAdapter.Holder>() {
     }
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        val RoomMemo = dataList.get(position)
-        holder.onBind(RoomMemo)
+        val roomMemo = dataList.get(position)
+        holder.onBind(roomMemo)
     }
 
     override fun getItemCount(): Int = dataList.size
