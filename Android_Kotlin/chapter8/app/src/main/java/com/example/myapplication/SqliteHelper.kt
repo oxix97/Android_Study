@@ -9,7 +9,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
     SQLiteOpenHelper(context, name, null, version) {
     override fun onCreate(db: SQLiteDatabase?) {
         val create = "create table memo (" +
-                "id integer primary key, " +
+                "num integer primary key, " +
                 "content text, " +
                 "datetime integer" + ")"
         db?.execSQL(create)
@@ -19,7 +19,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
 
     }
 
-    private fun insertMemo(memo: Memo) {
+    fun insertMemo(memo: Memo) {
         val values = ContentValues()
         values.put("content", memo.content)
         values.put("datetime", memo.datetime)
@@ -29,8 +29,9 @@ class SqliteHelper(context: Context, name: String, version: Int) :
         wd.close()
     }
 
-    private fun selectMemo(): MutableList<Memo> {
+    fun selectMemo(): MutableList<Memo> {
         val list = mutableListOf<Memo>()
+
         val select = "select * from memo"
         val rd = readableDatabase
         val cursor = rd.rawQuery(select, null)
@@ -46,7 +47,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
         return list
     }
 
-    private fun updateMemo(memo: Memo) {
+    fun updateMemo(memo: Memo) {
         val values = ContentValues()
         values.put("content", memo.content)
         values.put("datetime", memo.datetime)
@@ -56,7 +57,7 @@ class SqliteHelper(context: Context, name: String, version: Int) :
         wd.close()
     }
 
-    private fun deleteMemo(memo: Memo) {
+    fun deleteMemo(memo: Memo) {
         val delete = "delete from memo where num = ${memo.num}"
 
         val db = writableDatabase
