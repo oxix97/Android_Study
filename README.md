@@ -1,6 +1,26 @@
 # Android
 
+
+## [Android_Kotlin](https://github.com/oxix97/Android_Study/tree/master/BasicApp)
+
+### BasicApp
+
+- #### [BMI_Calculator](https://github.com/oxix97/Android_Study/tree/master/BasicApp/BMI_Calulator)
+- #### [Lotto_Selector](https://github.com/oxix97/Android_Study/tree/master/BasicApp/Lotto)
+- #### [Secret_Diary](https://github.com/oxix97/Android_Study/tree/master/BasicApp/SecretDiary)
+- #### [Calculator](https://github.com/oxix97/Android_Study/tree/master/BasicApp/Calculator)  
+- #### [PhotoFrame](https://github.com/oxix97/Android_Study/tree/master/BasicApp/PhotoFrame)
+
 ---
+### 이것이 안드로이드
+
+- #### [chapter4](https://github.com/oxix97/Android_Study/tree/master/Android_Kotlin/chapter4)
+- #### [chapter5](https://github.com/oxix97/Android_Study/tree/master/Android_Kotlin/chapter5)
+- #### [chapter6](https://github.com/oxix97/Android_Study/tree/master/Android_Kotlin/chapter6)
+- #### [chapter7](https://github.com/oxix97/Android_Study/tree/master/Android_Kotlin/chapter7)
+- #### [chapter8](https://github.com/oxix97/Android_Study/tree/master/Android_Kotlin/chapter8)
+---
+
 ## [Android_Java](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android)
 
 - #### [Layout](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/layout)
@@ -15,9 +35,3 @@
 - #### [Subject](https://github.com/oxix97/Android_Study/tree/master/Do_it%20Android/Subject)
 
 -----
-
-## [Android_Kotlin](https://github.com/oxix97/Android_Study/tree/master/BasicApp)
-
-- #### [BMI_Calculator](https://github.com/oxix97/Android_Study/tree/master/BasicApp/BMI_Calulator)
-- #### [Lotto_Selector](https://github.com/oxix97/Android_Study/tree/master/BasicApp/Lotto)
-- #### [Secret_Diary](https://github.com/oxix97/Android_Study/tree/master/BasicApp/SecretDiary)
