@@ -1,7 +1,7 @@
 # Android
 
 
-## [Android_Kotlin](https://github.com/oxix97/Android_Study/tree/master/BasicApp)
+## Android_Kotlin
 
 ### BasicApp
 
