@@ -36,7 +36,7 @@
         android:id="@+id/sb_main_time_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:max="60"
+        android:max="30"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

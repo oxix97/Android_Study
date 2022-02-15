@@ -1,6 +1,7 @@
 package com.example.timer
 
 import android.annotation.SuppressLint
+import android.media.SoundPool
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -10,12 +11,16 @@ import com.example.timer.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var currentCountDownTimer: CountDownTimer? = null
+    private val soundPool = SoundPool.Builder().build()
+    private var tickingSoundId: Int? = null
+    private var bellSoundId: Int? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        bindViews()
 
+        bindViews()
+        initSoundPool()
     }
 
     private fun bindViews() {
@@ -36,8 +41,33 @@ class MainActivity : AppCompatActivity() {
                 seekBar ?: return
                 currentCountDownTimer = createCountDownTimer(seekBar.progress * 60 * 1000L)
                 currentCountDownTimer?.start()
+
+                tickingSoundId?.let {
+                    soundPool.play(it, 1F, 1F, 0, -1, 1F)
+                }
             }
         })
+    }
+
+    override fun onResume() {
+        super.onResume()
+        soundPool.autoResume()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        soundPool.autoPause()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        soundPool.release()
+    }
+
+    private fun initSoundPool() {
+        tickingSoundId = soundPool.load(this, R.raw.timer_ticking, 1)
+        bellSoundId = soundPool.load(this, R.raw.timer_bell, 1)
+
     }
 
     private fun createCountDownTimer(initialMillis: Long) =
@@ -48,10 +78,19 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFinish() {
-                updateRemainTime(0)
-                updateSeekbar(0)
+                completeCountDown()
             }
         }
+
+    private fun completeCountDown() {
+        updateRemainTime(0)
+        updateSeekbar(0)
+
+        soundPool.autoPause()
+        bellSoundId?.let {
+            soundPool.play(it, 1F, 1F, 0, 0, 1F)
+        }
+    }
 
     @SuppressLint("SetTextI18n")
     private fun updateRemainTime(remainMillis: Long) {
