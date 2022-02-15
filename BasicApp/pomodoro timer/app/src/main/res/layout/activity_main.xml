@@ -4,39 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C54343"
     tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_main_tomato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_tomato_stem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_main_minute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:includeFontPadding="false"
         android:text="00"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:textSize="120sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tv_main_second"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toBottomOf="@id/iv_main_tomato"
+        tools:ignore="HardcodedText"
+        tools:text="00'" />
 
     <TextView
         android:id="@+id/tv_main_second"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:includeFontPadding="false"
         android:text="00"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:textSize="70sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_main_minute"
+        app:layout_constraintBottom_toBottomOf="@id/tv_main_minute"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tv_main_minute"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
 
     <SeekBar
         android:id="@+id/sb_main_time_count"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:max="30"
+        android:layout_marginHorizontal="30dp"
+        android:max="60"
+        android:thumb="@drawable/ic_thumb"
+        android:tickMark="@drawable/drawable_tick_mark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

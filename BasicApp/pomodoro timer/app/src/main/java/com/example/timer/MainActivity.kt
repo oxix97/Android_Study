@@ -96,7 +96,7 @@ class MainActivity : AppCompatActivity() {
     private fun updateRemainTime(remainMillis: Long) {
         val remainSeconds = remainMillis / 1000L
         with(binding) {
-            tvMainMinute.text = "%02d".format(remainSeconds / 60)
+            tvMainMinute.text = "%02d'".format(remainSeconds / 60)
             tvMainSecond.text = "%02d".format(remainSeconds % 60)
         }
     }
