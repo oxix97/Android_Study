@@ -2,7 +2,7 @@ package com.example.myapplication
 
 import android.Manifest
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Bitmap
 import android.os.Bundle
 import android.provider.MediaStore
 import androidx.activity.result.ActivityResultLauncher
@@ -21,6 +21,7 @@ class MainActivity :
 
     override fun initView() {
         initGallery()
+        cameraResult()
     }
 
     private fun setViews() {
@@ -38,6 +39,26 @@ class MainActivity :
         registerLauncher.launch(intent)
     }
 
+    private fun cameraResult() {
+        registerLauncher =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+                if (it.resultCode == RESULT_OK) {
+                    val requestCode = intent.getIntExtra("REQ_CAMERA", 0)
+                    when (requestCode) {
+                        REQ_CAMERA -> {
+                            val data = intent?.extras?.get("data")
+                            if (data != null) {
+                                val bitmap = data as Bitmap
+                                binding.ivMainImage.setImageBitmap(bitmap)
+                            }
+                        }
+                    }
+                }
+            }
+
+    }
+
+
     //저장소 승인 요청 완료
     override fun permissionGranted(requestCode: Int) {
         when (requestCode) {
@@ -52,6 +73,9 @@ class MainActivity :
             PERM_STORAGE -> {
                 shortToast("외부 저장소 권한을 승인해야 앱을 사용할 수 있습니다.")
                 finish()
+            }
+            PERM_CAMERA -> {
+                shortToast("권한을 승인해야 카메라를 사용할 수 있다.")
             }
         }
     }
