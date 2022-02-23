@@ -20,8 +20,7 @@ class MainActivity :
     private fun initFirebase() {
         FirebaseMessaging.getInstance().token.addOnCompleteListener {
             if (it.isSuccessful) {
-                binding.tvMainToken.setText("${it.result}")
-                Log.d("token",it.result.toString())
+                binding.tvMainToken.text = it.result
             }
         }
     }
