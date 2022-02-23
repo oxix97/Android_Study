@@ -10,9 +10,49 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="16dp"
         tools:context=".MainActivity">
 
+        <TextView
+            android:id="@+id/tv_main_result_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="결과"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText" />
 
+        <TextView
+            android:id="@+id/tv_main_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_main_result_text" />
+
+        <TextView
+            android:id="@+id/tv_main_token_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Firebase Token"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_main_result"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/tv_main_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_main_token_text" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
