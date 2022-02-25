@@ -1,9 +1,14 @@
 package com.example.pushalarm
 
+import android.annotation.SuppressLint
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.PendingIntent.FLAG_MUTABLE
+import android.app.PendingIntent.FLAG_UPDATE_CURRENT
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
@@ -34,16 +39,40 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     }
 
+    private fun createNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(
+                CHANNEL_ID,
+                CHANNEL_NAME,
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
+            channel.description = CHANNEL_DESCRIPTION
+
+            (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
+                .createNotificationChannel(channel)
+        }
+    }
+
+    @SuppressLint("UnspecifiedImmutableFlag")
     private fun createNotification(
-        type: NotificationType?,
+        type: NotificationType,
         title: String?,
         text: String?
     ): Notification {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            putExtra("notificationType", "${type.title}타입")
+            addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        }
+
+        val pendingIntent = PendingIntent.getActivity(this, type.id, intent, FLAG_MUTABLE)
+
         val notificationBuilder = NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic__90107_alarm_alert_bell_christmas_notification_icon)
             .setContentTitle(title)
             .setContentText(text)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setContentIntent(pendingIntent)
+            .setAutoCancel(true)
 
         when (type) {
             NotificationType.NORMAL -> Unit
@@ -54,11 +83,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
                             "😀 😃 😄 😁 😆 😅 😂 🤣 😇 😉 😊 🙂 🙃" +
                                     " ☺ 😋 😌 😍 🥰 😘 😗 😙 😚 🥲 🤪 😜" +
                                     " 😝 😛 🤑 😎 🤓 🥸 🧐 🤠 🥳 🤗 🤡 😏 " +
-                                    "😶 😐 😑 😒 🙄 🤨 🤔 🤫 🤭 🤥 😳 😞 " +
-                                    "😟 😠 😡 🤬 😔 😕 🙁 ☹ 😬 🥺 😣 😖 😫" +
-                                    " 😩 🥱 😤 😮‍💨 😮 😱 😨 😰 😯 😦 😧 😢 " +
-                                    "😥 😪 🤤 😓 😭 🤩 😵 😵‍💫 🥴 😲 🤯 🤐 " +
-                                    "😷 🤕 🤒"
+                                    "😶 😐 😑 😒 🙄 🤨 🤔 🤫 🤭 🤥 😳 😞 "
                         )
                 )
             }
@@ -75,23 +100,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
                         }
                     )
             }
-            null -> TODO()
         }
         return notificationBuilder.build()
-    }
-
-    private fun createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                CHANNEL_ID,
-                CHANNEL_NAME,
-                NotificationManager.IMPORTANCE_DEFAULT
-            )
-            channel.description = CHANNEL_DESCRIPTION
-
-            (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
-                .createNotificationChannel(channel)
-        }
     }
 
     companion object {

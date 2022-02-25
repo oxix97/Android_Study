@@ -1,5 +1,7 @@
 package com.example.pushalarm
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.example.pushalarm.base.baseutil.BaseViewUtil
@@ -15,6 +17,7 @@ class MainActivity :
 
     override fun initView() {
         initFirebase()
+        updateResult()
     }
 
     private fun initFirebase() {
@@ -23,5 +26,22 @@ class MainActivity :
                 binding.tvMainToken.text = it.result
             }
         }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun updateResult(isNewIntent: Boolean = false) {
+        binding.tvMainResult.text =
+            (intent.getStringExtra("notificationType") ?: "앱 런처") +
+                    if (isNewIntent) {
+                        "(으)로 갱신헀습니다."
+                    } else {
+                        "(으)로 실행했습니다."
+                    }
+    }
+
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        updateResult(true)
     }
 }
