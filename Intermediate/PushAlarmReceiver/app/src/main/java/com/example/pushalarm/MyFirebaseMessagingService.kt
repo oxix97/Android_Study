@@ -5,6 +5,7 @@ import android.app.NotificationChannel
 import android.app.NotificationManager
 import android.content.Context
 import android.os.Build
+import android.widget.RemoteViews
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.google.firebase.messaging.FirebaseMessagingService
@@ -43,18 +44,40 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             .setContentTitle(title)
             .setContentText(text)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-            .build()
 
         when (type) {
             NotificationType.NORMAL -> Unit
             NotificationType.EXPANDABLE -> {
-
+                notificationBuilder.setStyle(
+                    NotificationCompat.BigTextStyle()
+                        .bigText(
+                            "😀 😃 😄 😁 😆 😅 😂 🤣 😇 😉 😊 🙂 🙃" +
+                                    " ☺ 😋 😌 😍 🥰 😘 😗 😙 😚 🥲 🤪 😜" +
+                                    " 😝 😛 🤑 😎 🤓 🥸 🧐 🤠 🥳 🤗 🤡 😏 " +
+                                    "😶 😐 😑 😒 🙄 🤨 🤔 🤫 🤭 🤥 😳 😞 " +
+                                    "😟 😠 😡 🤬 😔 😕 🙁 ☹ 😬 🥺 😣 😖 😫" +
+                                    " 😩 🥱 😤 😮‍💨 😮 😱 😨 😰 😯 😦 😧 😢 " +
+                                    "😥 😪 🤤 😓 😭 🤩 😵 😵‍💫 🥴 😲 🤯 🤐 " +
+                                    "😷 🤕 🤒"
+                        )
+                )
             }
-            NotificationType.CUSTOM ->{
-
+            NotificationType.CUSTOM -> {
+                notificationBuilder
+                    .setStyle(NotificationCompat.DecoratedCustomViewStyle())
+                    .setCustomContentView(
+                        RemoteViews(
+                            packageName,
+                            R.layout.view_custom_notification
+                        ).apply {
+                            setTextViewText(R.id.tv_custom_notification_title, title)
+                            setTextViewText(R.id.tv_custom_notification_message, text)
+                        }
+                    )
             }
             null -> TODO()
         }
+        return notificationBuilder.build()
     }
 
     private fun createNotificationChannel() {
