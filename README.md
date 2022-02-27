@@ -11,6 +11,7 @@
 - #### [Calculator](https://github.com/oxix97/Android_Study/tree/master/BasicApp/Calculator)  
 - #### [PhotoFrame](https://github.com/oxix97/Android_Study/tree/master/BasicApp/PhotoFrame)
 - #### [pomodoro timer](https://github.com/oxix97/Android_Study/tree/master/BasicApp/pomodoro%20timer)
+- #### [push alarm](https://github.com/oxix97/Android_Study/tree/master/Intermediate/PushAlarmReceiver)
 
 ---
 
