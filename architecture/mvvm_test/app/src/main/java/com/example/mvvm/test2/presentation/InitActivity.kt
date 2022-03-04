@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvm.R
 import com.example.mvvm.databinding.ActivityInitBinding
 import com.example.mvvm.test2.viewmodel.MainViewModel
-import com.example.mvvm.test2.viewmodel.RecyclerViewAdapter
 import com.example.mvvm.test2.model.Entity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

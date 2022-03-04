@@ -21,15 +21,15 @@ class Repository(mDatabase: AppDatabase) {
         }
     }
 
-    suspend fun insert(entity: Entity) {
+     fun insert(entity: Entity) {
         dao.insert(entity)
     }
 
-    suspend fun delete(entity: Entity) {
+     fun delete(entity: Entity) {
         dao.delete(entity)
     }
 
-    suspend fun deleteAll() {
+     fun deleteAll() {
         dao.deleteAll()
     }
 

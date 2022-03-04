@@ -1,13 +1,14 @@
-package com.example.mvvm.test2.viewmodel
+package com.example.mvvm.test2.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.mvvm.databinding.ItemRecyclerBinding
 import com.example.mvvm.test2.model.Entity
+import com.example.mvvm.test2.viewmodel.MainViewModel
 
 class RecyclerViewAdapter internal constructor(
-    var viewModel: MainViewModel
+    private val viewModel: MainViewModel
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
     private var users = emptyList<Entity>() // Cached copy of words
 

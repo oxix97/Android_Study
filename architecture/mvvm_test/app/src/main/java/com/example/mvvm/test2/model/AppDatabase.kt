@@ -6,9 +6,6 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import kotlinx.coroutines.CoroutineScope
 
-//이게 무슨 뜻이지??
-//이거 하는 역할 상세하게 알아봐야할듯
-
 @Database(entities = [Entity::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase(){
     abstract fun dao(): DAO
