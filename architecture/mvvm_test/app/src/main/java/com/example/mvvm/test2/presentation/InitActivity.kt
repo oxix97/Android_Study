@@ -2,6 +2,7 @@ package com.example.mvvm.test2.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
@@ -15,30 +16,45 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class InitActivity : AppCompatActivity() {
-    private val viewModel: MainViewModel by viewModels()
+    private val mainViewModel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding =
             DataBindingUtil.setContentView<ActivityInitBinding>(this, R.layout.activity_init)
-        //여기서 오류남
-        binding.viewModel = viewModel
 
-        val mAdapter = RecyclerViewAdapter(viewModel)
-        binding.recyclerview.apply {
-            adapter = mAdapter
-            layoutManager = LinearLayoutManager(applicationContext)
-        }
+        with(binding) {
+            viewModel = mainViewModel
 
-        viewModel.allUsers.observe(this) { users ->
-            users?.let { mAdapter.setUsers(it) }
-        }
+            val mAdapter = RecyclerViewAdapter(mainViewModel)
 
-        binding.button.setOnClickListener {
-            lifecycleScope.launch(Dispatchers.IO) {
-                viewModel.insert(
-                    Entity(0, binding.edit.text.toString())
-                )
+            recyclerview.apply {
+                adapter = mAdapter
+                layoutManager = LinearLayoutManager(applicationContext)
             }
+
+            mainViewModel.allUsers.observe(this@InitActivity) { users ->
+                users?.let { mAdapter.setUsers(it) }
+            }
+
+            button.setOnClickListener {
+                if (edit.text.isNotEmpty()) {
+                    lifecycleScope.launch(Dispatchers.IO) {
+                        mainViewModel.insert(
+                            Entity(0, edit.text.toString())
+                        )
+                        edit.text.clear()
+                    }
+                } else {
+                    Toast.makeText(this@InitActivity, "input text plz", Toast.LENGTH_SHORT).show()
+                }
+            }
+
+            btnInitClear.setOnClickListener {
+                lifecycleScope.launch {
+                    mainViewModel.deleteAll()
+                }
+            }
+
         }
     }
 }

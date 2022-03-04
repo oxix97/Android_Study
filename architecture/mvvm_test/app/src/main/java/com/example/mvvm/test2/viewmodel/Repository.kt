@@ -29,4 +29,8 @@ class Repository(mDatabase: AppDatabase) {
         dao.delete(entity)
     }
 
+    suspend fun deleteAll() {
+        dao.deleteAll()
+    }
+
 }

@@ -36,6 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    tools:text="input text"
                     android:textColor="@android:color/black"
                     android:textSize="20sp" />
 

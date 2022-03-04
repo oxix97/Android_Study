@@ -7,7 +7,7 @@ import com.example.mvvm.databinding.ItemRecyclerBinding
 import com.example.mvvm.test2.model.Entity
 
 class RecyclerViewAdapter internal constructor(
-    var onDeleteListener: MainViewModel
+    var viewModel: MainViewModel
 ) : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>() {
     private var users = emptyList<Entity>() // Cached copy of words
 
@@ -17,7 +17,7 @@ class RecyclerViewAdapter internal constructor(
             binding.text.text = data.num
             with(binding) {
                 deleteButton.setOnClickListener {
-                    onDeleteListener.delete(data)
+                    viewModel.delete(data)
                 }
             }
         }
