@@ -21,6 +21,7 @@ class InitActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding =
             DataBindingUtil.setContentView<ActivityInitBinding>(this, R.layout.activity_init)
+        //여기서 오류남
         binding.viewModel = viewModel
 
         val mAdapter = RecyclerViewAdapter(this, viewModel)
