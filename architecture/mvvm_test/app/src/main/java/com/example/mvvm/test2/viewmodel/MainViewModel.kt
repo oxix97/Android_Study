@@ -1,4 +1,4 @@
-package com.example.mvvm.test2.VModel
+package com.example.mvvm.test2.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

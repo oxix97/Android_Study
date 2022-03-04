@@ -1,4 +1,4 @@
-package com.example.mvvm.test2.VModel
+package com.example.mvvm.test2.viewmodel
 
 import androidx.lifecycle.LiveData
 import com.example.mvvm.test2.model.AppDatabase

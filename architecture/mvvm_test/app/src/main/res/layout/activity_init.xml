@@ -7,7 +7,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.mvvm.test2.VModel.MainViewModel" />
+            type="com.example.mvvm.test2.viewmodel.MainViewModel" />
     </data>
 
 
