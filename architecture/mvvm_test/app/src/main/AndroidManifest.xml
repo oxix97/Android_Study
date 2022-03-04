@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mvvm">
         <activity
-            android:name=".MainActivity"
+            android:name=".test.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".test.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".test2.presentation.InitActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
