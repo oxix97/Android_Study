@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="mainData"
+            type="com.example.myapplication.MainData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/retangle_gray_radius_10"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_main_title"
+            style="@style/item_font_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{mainData.title}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:id="@+id/tv_main_date"
+            style="@style/item_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:createDate="@{mainData.date}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="yyyy.mm.dd" />
+
+        <TextView
+            android:id="@+id/tv_main_content"
+            style="@style/item_font"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@{mainData.content}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_main_title"
+            tools:text="@tools:sample/lorem/random" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
