@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.presentation
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.ItemMainBinding
+import com.example.myapplication.model.MainData
 
 class MainListAdapter : ListAdapter<MainData, MainListAdapter.ViewHolder>(MainDataComparator()) {
     inner class ViewHolder(private val binding: ItemMainBinding) :

@@ -37,7 +37,7 @@ class InitActivity : AppCompatActivity() {
 
             button.setOnClickListener {
                 if (edit.text.isNotEmpty()) {
-                    lifecycleScope.launch(Dispatchers.IO) {
+                    lifecycleScope.launch {
                         mainViewModel.insert(
                             Entity(0, edit.text.toString())
                         )

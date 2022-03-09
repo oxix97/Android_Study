@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic__90107_alarm_alert_bell_christmas_notification_icon.xml" value="0.1805" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.31746031746031744" />
         <entry key="app/src/main/res/layout/view_custom_notification.xml" value="0.2671875" />
       </map>

@@ -7,7 +7,7 @@
 
         <variable
             name="mainData"
-            type="com.example.myapplication.MainData" />
+            type="com.example.myapplication.model.MainData" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

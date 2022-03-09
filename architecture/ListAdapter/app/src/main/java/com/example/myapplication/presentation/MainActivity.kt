@@ -1,8 +1,9 @@
-package com.example.myapplication
+package com.example.myapplication.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.model.MainData
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
