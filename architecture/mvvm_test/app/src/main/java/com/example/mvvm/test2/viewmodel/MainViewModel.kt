@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(application: Application) : AndroidViewModel(application) {
     val repository: Repository = Repository(AppDatabase.getDatabase(application, viewModelScope))
-    var allUsers: LiveData<List<Entity>> = repository.allUsers
+    val allUsers: LiveData<List<Entity>> = repository.allUsers
 
     fun insert(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
         repository.insert(entity)

@@ -2,21 +2,39 @@ package com.example.myapplication.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.model.MainData
+import com.example.myapplication.viewmodel.MainViewModel
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
-    private lateinit var mainListAdapter: MainListAdapter
+    private val mainViewModel: MainViewModel by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        val binding =
+            DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        mainListAdapter = MainListAdapter()
-        mainListAdapter.submitList(STUB_DATA)
-        binding.rvMainContainer.adapter = mainListAdapter
+        binding.viewModel = mainViewModel
+
+        val mAdapter = MainListAdapter(mainViewModel)
+        mAdapter.submitList(STUB_DATA)
+
+        with(binding) {
+            rvMainContainer.apply {
+                adapter = mAdapter
+                layoutManager = LinearLayoutManager(applicationContext)
+            }
+
+            mainViewModel.dataList.observe(this@MainActivity) { list ->
+                list?.let {
+                    mAdapter.setDataList(it)
+                }
+            }
+        }
 
     }
 
