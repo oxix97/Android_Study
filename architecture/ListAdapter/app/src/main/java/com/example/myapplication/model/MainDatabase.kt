@@ -12,21 +12,21 @@ abstract class MainDatabase : RoomDatabase() {
 
     companion object {
         @Volatile
-        private var INSTACE: MainDatabase? = null
+        private var INSTANCE: MainDatabase? = null
         fun getDatabase(
             context: Context,
-            viewModelScope: CoroutineScope,
+            scope: CoroutineScope,
         ): MainDatabase {
-            return INSTACE ?: synchronized(this) {
-                val instace = Room.databaseBuilder(
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
                     context.applicationContext,
                     MainDatabase::class.java,
                     "database"
                 )
                     .fallbackToDestructiveMigration()
                     .build()
-                INSTACE = instace
-                instace
+                INSTANCE = instance
+                instance
             }
         }
     }

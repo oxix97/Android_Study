@@ -1,8 +1,8 @@
 package com.example.myapplication.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
@@ -18,12 +18,10 @@ class MainActivity : AppCompatActivity() {
         val binding =
             DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
-        binding.viewModel = mainViewModel
-
-        val mAdapter = MainListAdapter(mainViewModel)
-        mAdapter.submitList(STUB_DATA)
-
         with(binding) {
+            viewModel = mainViewModel
+            val mAdapter = MainListAdapter(mainViewModel)
+
             rvMainContainer.apply {
                 adapter = mAdapter
                 layoutManager = LinearLayoutManager(applicationContext)

@@ -13,7 +13,6 @@ import com.example.myapplication.viewmodel.MainViewModel
 
 class MainListAdapter(private val viewModel: MainViewModel) :
     ListAdapter<MainData, MainListAdapter.ViewHolder>(MainDataComparator()) {
-
     inner class ViewHolder(private val binding: ItemMainBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(data: MainData) {
