@@ -6,10 +6,10 @@ import androidx.room.*
 @Dao
 interface MainDao {
 
-    @Query("select * from test_data order by id ASC")
+    @Query("SELECT * FROM test_data ORDER BY id ASC")
     fun getAll(): LiveData<List<MainData>>
 
-    @Query("delete from test_data")
+    @Query("DELETE FROM test_data")
     fun deleteAll()
 
     @Delete

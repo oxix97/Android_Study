@@ -13,13 +13,12 @@ import com.example.myapplication.viewmodel.MainViewModel
 
 class MainListAdapter(private val viewModel: MainViewModel) :
     ListAdapter<MainData, MainListAdapter.ViewHolder>(MainDataComparator()) {
+
     inner class ViewHolder(private val binding: ItemMainBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(data: MainData) {
             with(binding) {
-                executePendingBindings()
-                binding.mainData = data
-
+                mainData = data
                 btnMainDelete.setOnClickListener {
                     viewModel.delete(data)
                 }
@@ -47,9 +46,7 @@ class MainListAdapter(private val viewModel: MainViewModel) :
         holder.onBind(getItem(position))
     }
 
-    internal fun setDataList(dataList: List<MainData>) {
-        val list: LiveData<List<MainData>> = liveData { dataList }
-        viewModel.dataList = list
-    }
+    fun setData(list: List<MainData>) {
 
+    }
 }

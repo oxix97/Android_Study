@@ -18,10 +18,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun delete(data: MainData) = viewModelScope.launch(Dispatchers.IO) {
-        repository.insert(data)
+        repository.delete(data)
     }
 
     fun deleteAll() = viewModelScope.launch(Dispatchers.IO) {
         repository.deleteAll()
     }
+
+    fun getAll(): LiveData<List<MainData>> = dataList
 }

@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.util
 
 import android.widget.TextView
 import androidx.databinding.BindingAdapter

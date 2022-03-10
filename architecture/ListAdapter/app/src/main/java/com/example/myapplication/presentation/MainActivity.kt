@@ -1,22 +1,29 @@
 package com.example.myapplication.presentation
 
 import android.os.Bundle
-import androidx.activity.viewModels
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.size
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.model.MainData
 import com.example.myapplication.viewmodel.MainViewModel
+import kotlinx.coroutines.launch
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    private val mainViewModel: MainViewModel by viewModels()
+    private lateinit var mainViewModel: MainViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val binding =
             DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
+
+        mainViewModel = MainViewModel(application)
 
         with(binding) {
             viewModel = mainViewModel
@@ -29,23 +36,24 @@ class MainActivity : AppCompatActivity() {
 
             mainViewModel.dataList.observe(this@MainActivity) { list ->
                 list?.let {
-                    mAdapter.setDataList(it)
+                    mAdapter.submitList(it)
+                }
+            }
+
+            btnMainAdd.setOnClickListener {
+                if (etMainText.text.isNotEmpty()) {
+                    lifecycleScope.launch {
+                        mainViewModel.insert(
+                            MainData(
+                                0, "title : ${rvMainContainer.size + 1}", etMainText.text.toString()
+                            )
+                        )
+                        etMainText.text.clear()
+                    }
+                } else {
+                    Toast.makeText(this@MainActivity, "input text plz", Toast.LENGTH_SHORT).show()
                 }
             }
         }
-
-    }
-
-    companion object {
-        private val STUB_DATA = listOf(
-            MainData(0, "title0", "Content", Date()),
-            MainData(1, "title1", "Content1", Date()),
-            MainData(2, "title2", "Content22", Date()),
-            MainData(3, "title3", "Content333", Date()),
-            MainData(4, "title4", "Content4444", Date()),
-            MainData(5, "title5", "Content55555", Date()),
-            MainData(6, "title6", "Content666666", Date()),
-            MainData(7, "title7", "Content7777777", Date()),
-        )
     }
 }

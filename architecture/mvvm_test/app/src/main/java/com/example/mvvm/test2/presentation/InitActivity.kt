@@ -1,17 +1,16 @@
 package com.example.mvvm.test2.presentation
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvm.R
 import com.example.mvvm.databinding.ActivityInitBinding
-import com.example.mvvm.test2.viewmodel.MainViewModel
 import com.example.mvvm.test2.model.Entity
-import kotlinx.coroutines.Dispatchers
+import com.example.mvvm.test2.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
 
 class InitActivity : AppCompatActivity() {

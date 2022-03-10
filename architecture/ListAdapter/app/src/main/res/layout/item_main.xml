@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
         <variable
             name="mainData"
             type="com.example.myapplication.model.MainData" />
@@ -25,16 +24,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="@tools:sample/lorem" />
-
-        <TextView
-            android:id="@+id/tv_main_date"
-            style="@style/item_font"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:createDate="@{mainData.date}"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="yyyy.mm.dd" />
 
         <LinearLayout
             android:layout_width="match_parent"

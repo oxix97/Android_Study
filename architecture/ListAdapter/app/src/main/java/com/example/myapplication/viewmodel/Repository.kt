@@ -8,6 +8,17 @@ class Repository(mDatabase: MainDatabase) {
     private val dao = mDatabase.dao()
     val dataList: LiveData<List<MainData>> = dao.getAll()
 
+    companion object {
+        private var sINSTANCE: Repository? = null
+        fun getInstance(database: MainDatabase): Repository {
+            return sINSTANCE ?: synchronized(this) {
+                val instance = Repository(database)
+                sINSTANCE = instance
+                instance
+            }
+        }
+    }
+
     fun insert(data: MainData) {
         dao.insert(data)
     }
@@ -20,14 +31,4 @@ class Repository(mDatabase: MainDatabase) {
         dao.deleteAll()
     }
 
-    companion object {
-        private var INSTANCE: Repository? = null
-        fun getInstace(database: MainDatabase): Repository {
-            return INSTANCE ?: synchronized(this) {
-                val instance = Repository(database)
-                INSTANCE = instance
-                instance
-            }
-        }
-    }
 }

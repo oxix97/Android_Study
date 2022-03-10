@@ -14,27 +14,43 @@
         android:layout_height="match_parent"
         tools:context=".presentation.MainActivity">
 
-        <TextView
-            android:id="@+id/title"
-            style="@style/item_font_title"
-            android:layout_marginTop="12dp"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/ll_main_container"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ListAdapter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/et_main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="할 일"
+                android:inputType="textPersonName"
+                tools:text="input text" />
+
+            <Button
+                android:id="@+id/btn_main_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="button">
+
+            </Button>
+
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_main_container"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             android:layout_marginVertical="12dp"
             tools:itemCount="8"
             tools:listitem="@layout/item_main"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/title" />
+            app:layout_constraintTop_toBottomOf="@id/ll_main_container" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
