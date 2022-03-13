@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mvvm.R
@@ -14,13 +15,14 @@ import com.example.mvvm.test2.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
 
 class InitActivity : AppCompatActivity() {
-    private val mainViewModel: MainViewModel by viewModels()
+    private lateinit var  mainViewModel: MainViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding =
             DataBindingUtil.setContentView<ActivityInitBinding>(this, R.layout.activity_init)
 
         with(binding) {
+            mainViewModel = ViewModelProvider(this@InitActivity)[MainViewModel::class.java]
             viewModel = mainViewModel
 
             val mAdapter = RecyclerViewAdapter(mainViewModel)
