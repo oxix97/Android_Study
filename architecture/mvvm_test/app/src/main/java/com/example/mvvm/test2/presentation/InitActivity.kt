@@ -15,9 +15,10 @@ import com.example.mvvm.test2.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
 
 class InitActivity : AppCompatActivity() {
-    private lateinit var  mainViewModel: MainViewModel
+    private lateinit var mainViewModel: MainViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         val binding =
             DataBindingUtil.setContentView<ActivityInitBinding>(this, R.layout.activity_init)
 

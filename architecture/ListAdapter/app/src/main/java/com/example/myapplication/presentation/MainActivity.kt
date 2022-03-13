@@ -10,18 +10,18 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myapplication.R
 import com.example.myapplication.databinding.ActivityMainBinding
 import com.example.myapplication.model.MainData
+import com.example.myapplication.util.base.BaseViewUtil
+import com.example.myapplication.util.shortToast
 import com.example.myapplication.viewmodel.MainViewModel
 import kotlinx.coroutines.launch
 import java.util.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity :
+    BaseViewUtil.BaseAppCompatActivity<ActivityMainBinding>(R.layout.activity_main) {
     private lateinit var mainViewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val binding =
-            DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         mainViewModel = MainViewModel(application)
 
@@ -45,15 +45,21 @@ class MainActivity : AppCompatActivity() {
                     lifecycleScope.launch {
                         mainViewModel.insert(
                             MainData(
-                                0, "title : ${rvMainContainer.size + 1}", etMainText.text.toString()
+                                0,
+                                "title",
+                                etMainText.text.toString()
                             )
                         )
                         etMainText.text.clear()
                     }
                 } else {
-                    Toast.makeText(this@MainActivity, "input text plz", Toast.LENGTH_SHORT).show()
+                    shortToast("input text plz")
                 }
             }
         }
+    }
+
+    override fun initView() {
+
     }
 }

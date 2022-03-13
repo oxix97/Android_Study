@@ -13,15 +13,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val repository: Repository = Repository(AppDatabase.getDatabase(application, viewModelScope))
     val allUsers: LiveData<List<Entity>> = repository.allUsers
 
-    fun insert(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
+    suspend fun insert(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
         repository.insert(entity)
     }
 
-    fun delete(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
+     fun delete(entity: Entity) = viewModelScope.launch(Dispatchers.IO) {
         repository.delete(entity)
     }
 
-    fun deleteAll() = viewModelScope.launch(Dispatchers.IO) {
+    suspend fun deleteAll() = viewModelScope.launch(Dispatchers.IO) {
         repository.deleteAll()
     }
 

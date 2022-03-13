@@ -46,7 +46,4 @@ class MainListAdapter(private val viewModel: MainViewModel) :
         holder.onBind(getItem(position))
     }
 
-    fun setData(list: List<MainData>) {
-
-    }
 }

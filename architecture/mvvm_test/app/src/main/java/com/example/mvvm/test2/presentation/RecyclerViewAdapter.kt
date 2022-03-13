@@ -15,8 +15,8 @@ class RecyclerViewAdapter internal constructor(
     inner class ViewHolder(private val binding: ItemRecyclerBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(data: Entity) {
-            binding.text.text = data.num
             with(binding) {
+                binding.text.text = data.num
                 deleteButton.setOnClickListener {
                     viewModel.delete(data)
                 }
