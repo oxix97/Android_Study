@@ -6,11 +6,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.databinding.ItemQuoteBinding
 
 class QuotesPagerAdapter(
-    private val quotes: List<Quote>
+    private val quotes: List<Quote>,
+    private val isNameRevealed: Boolean
 ) : RecyclerView.Adapter<QuotesPagerAdapter.ViewHolder>() {
     inner class ViewHolder(private val binding: ItemQuoteBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        fun onBind(data: Quote) {
+        fun onBind(data: Quote, isNameRevealed: Boolean) {
             with(binding) {
                 tvItemTitle.text = data.name
                 tvItemQuote.text = data.quote
@@ -25,7 +26,7 @@ class QuotesPagerAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.onBind(quotes[position])
+        holder.onBind(quotes[position],isNameRevealed)
     }
 
     override fun getItemCount() = quotes.size
