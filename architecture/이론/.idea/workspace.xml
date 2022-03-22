@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9fc9b47-52d2-44d9-870a-986083c2695f" name="Default Changelist" comment="Clean Architecture_Multi Module">
-      <change afterPath="$PROJECT_DIR$/이론/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/.idea/이론.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/CleanArchitecture.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/DI &amp; Koin.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/이론/Multi Module.md" beforeDir="false" />
+    <list default="true" id="21dbc732-cfa2-4274-bf51-cfc2c7f7b99e" name="Default Changelist" comment="delete">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/이론.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CleanArchitecture.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DI &amp; Koin.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multi Module.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +21,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="ProjectId" id="26TjeMrM7xe6teHAd6zBQQYpNhj" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="25myr2Ipc4iuF6zWSivI6RuJvfx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,31 +35,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="MTHome" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d9fc9b47-52d2-44d9-870a-986083c2695f" name="Default Changelist" comment="" />
-      <created>1647454564698</created>
+      <changelist id="21dbc732-cfa2-4274-bf51-cfc2c7f7b99e" name="Default Changelist" comment="" />
+      <created>1646146752296</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1647454564698</updated>
+      <updated>1646146752296</updated>
     </task>
-    <task id="LOCAL-00001" summary="Clean Architecture">
-      <created>1647454643970</created>
+    <task id="LOCAL-00001" summary="DI &amp; Koin">
+      <created>1647696996164</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1647454643970</updated>
+      <updated>1647696996164</updated>
     </task>
-    <task id="LOCAL-00002" summary="Clean Architecture_Multi Module">
-      <created>1647592738323</created>
+    <task id="LOCAL-00002" summary="delete">
+      <created>1647697003989</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1647592738323</updated>
+      <updated>1647697003989</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -79,8 +78,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Clean Architecture" />
-    <MESSAGE value="Clean Architecture_Multi Module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean Architecture_Multi Module" />
+    <MESSAGE value="DI &amp; Koin" />
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
   </component>
 </project>
