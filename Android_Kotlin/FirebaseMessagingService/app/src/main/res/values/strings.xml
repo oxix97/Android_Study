@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">PushAlarmService</string>
+    <string name="notification_expandable">
+        😀 😃 😄 😁 😆 😅 😂 🤣 🥲 ☺️ 😊 😇
+        🙂 🙃 😉 😌 😍 🥰 😘 😗 😙 😚 😋 😛
+        😝 😜 🤪 🤨 🧐 🤓 😎 🥸 🤩 🥳 😏 😒
+        😞 😔 😟 😕 🙁 ☹️ 😣 😖 😫 😩 🥺 😢
+        😭 😤 😠 😡 🤬 🤯 😳 🥵 🥶 😱 😨 😰
+        😥 😓 🤗 🤔 🤭 🤫 🤥 😶 😐 😑 😬 🙄
+        😯 😦 😧 😮 😲 🥱 😴 🤤 😪 😵 🤐 🥴
+        🤢 🤮 🤧 😷 🤒 🤕
+    </string>
 </resources>

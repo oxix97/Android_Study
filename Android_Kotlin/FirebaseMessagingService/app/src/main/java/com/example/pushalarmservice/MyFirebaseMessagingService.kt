@@ -3,11 +3,13 @@ package com.example.pushalarmservice
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.app.PendingIntent
+import android.app.PendingIntent.*
 import android.content.Context
 import android.content.Intent
 import android.os.Build
-import android.util.Log
 import android.widget.RemoteViews
+import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import com.google.firebase.messaging.FirebaseMessagingService
@@ -29,23 +31,32 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         type?.id ?: return
 
-        NotificationManagerCompat.from(this)
-            .notify(
-                type.id, createNotification(type, title, text)
-            )
+        NotificationManagerCompat.from(this).notify(
+            type.id, createNotification(type, title, text)
+        )
+    }
+
+    @RequiresApi(Build.VERSION_CODES.S)
+    private fun intentMain(type: NotificationType): PendingIntent? {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            putExtra("notificationType", "${type.title}타입")
+            addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        }
+        return getActivity(this, type.id, intent, FLAG_MUTABLE)
+
     }
 
     private fun createNotification(
-        type: NotificationType?,
-        title: String?,
-        msg: String?
+        type: NotificationType, title: String?, msg: String?
     ): Notification {
-
+        val pendingIntent = intentMain(type)
         val builder = NotificationCompat.Builder(this, CHANNEL_ID).apply {
             setAutoCancel(true)
             setSmallIcon(R.drawable.ic_baseline_doorbell_24)
             setContentTitle(title)
             setContentText(msg)
+            setContentIntent(pendingIntent)
+            setAutoCancel(true)
             priority = NotificationCompat.PRIORITY_DEFAULT
         }
 
@@ -60,14 +71,12 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             NotificationType.CUSTOM -> {
                 builder.apply {
                     setStyle(NotificationCompat.DecoratedCustomViewStyle())
-                    setCustomContentView(
-                        RemoteViews(
-                            packageName,
-                            R.layout.notification_custom
-                        ).apply {
-                            setTextViewText(R.id.title, title)
-                            setTextViewText(R.id.message, msg)
-                        })
+                    setCustomContentView(RemoteViews(
+                        packageName, R.layout.notification_custom
+                    ).apply {
+                        setTextViewText(R.id.title, title)
+                        setTextViewText(R.id.message, msg)
+                    })
                 }
             }
             else -> {
@@ -82,13 +91,12 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     private fun createNotificationChannel() {
         val channel = NotificationChannel(
-            CHANNEL_ID,
-            CHANNEL_NAME,
-            NotificationManager.IMPORTANCE_DEFAULT
+            CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT
         )
         channel.description = CHANNEL_DESCRIPTION
-        (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager)
-            .createNotificationChannel(channel)
+        (getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager).createNotificationChannel(
+            channel
+        )
 
     }
 
