@@ -9,6 +9,7 @@ import com.google.firebase.messaging.FirebaseMessagingService
 
 class MainActivity : AppCompatActivity() {
 
+
     private val textView: TextView by lazy {
         findViewById(R.id.tv_text)
     }
@@ -16,5 +17,15 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        initFirebase()
+    }
+
+    private fun initFirebase() {
+        FirebaseMessaging.getInstance().token.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                textView.text = task.result
+                Log.d("TOKEN : ",task.result)
+            }
+        }
     }
 }
