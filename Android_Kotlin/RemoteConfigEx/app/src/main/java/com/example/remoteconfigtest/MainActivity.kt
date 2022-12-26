@@ -2,10 +2,63 @@ package com.example.remoteconfigtest
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.remoteconfigtest.databinding.ActivityMainBinding
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.remoteconfig.ktx.remoteConfig
+import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
+import kotlinx.coroutines.awaitAll
+import org.json.JSONArray
+import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var adapter: PageAdapter
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        initData()
+        initAdapter()
+    }
+
+    private fun initAdapter() {
+
+    }
+
+    private fun initData() {
+        val remoteConfig = Firebase.remoteConfig
+        remoteConfig.setConfigSettingsAsync(remoteConfigSettings {
+            //서버에서 블락하지 않는 이상 곧 바로 패치됨
+            minimumFetchIntervalInSeconds = 0
+        })
+        remoteConfig.fetchAndActivate().addOnCompleteListener {
+            if (it.isSuccessful) {
+                val data = parseData(remoteConfig.getString("name"))
+                val isNameRevealed = remoteConfig.getBoolean("is_name_revealed")
+
+                displayDataPager(data, isNameRevealed)
+            }
+        }
+    }
+
+    private fun displayDataPager(data: List<RemoteData>, nameRevealed: Boolean) {
+        adapter = PageAdapter(nameRevealed)
+        adapter.submitList(data)
+        binding.vpContainer.adapter = adapter
+    }
+
+    private fun parseData(json: String): List<RemoteData> {
+        val jsonArr = JSONArray(json)
+        var jsonList = emptyList<JSONObject>()
+        for (idx in 0 until jsonArr.length()) {
+            val jsonObj = jsonArr.getJSONObject(idx)
+            jsonObj?.let { jsonList = jsonList + it }
+        }
+        return jsonList.map {
+            RemoteData(
+                name = it.getString("name"), price = it.getInt("price")
+            )
+        }
     }
 }
