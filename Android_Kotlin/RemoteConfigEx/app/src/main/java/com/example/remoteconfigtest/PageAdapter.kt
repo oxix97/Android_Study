@@ -31,6 +31,9 @@ class PageAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.onBind(getItem(position))
+        val actualPosition = position % currentList.size
+        holder.onBind(getItem(actualPosition))
     }
+
+    override fun getItemCount() = Int.MAX_VALUE
 }

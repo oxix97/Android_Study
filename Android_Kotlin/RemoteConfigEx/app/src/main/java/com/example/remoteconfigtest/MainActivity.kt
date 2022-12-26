@@ -1,5 +1,6 @@
 package com.example.remoteconfigtest
 
+import android.graphics.pdf.PdfDocument.Page
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.remoteconfigtest.databinding.ActivityMainBinding
@@ -12,7 +13,7 @@ import org.json.JSONObject
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var adapter: PageAdapter
+    private lateinit var listAdapter: PageAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,9 +44,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun displayDataPager(data: List<RemoteData>, nameRevealed: Boolean) {
-        adapter = PageAdapter(nameRevealed)
-        adapter.submitList(data)
-        binding.vpContainer.adapter = adapter
+        listAdapter = PageAdapter(nameRevealed)
+        listAdapter.apply {
+            submitList(data)
+        }
+
+        binding.vpContainer.apply {
+            this.adapter = listAdapter
+            setCurrentItem(listAdapter.itemCount / 2, false)
+        }
     }
 
     private fun parseData(json: String): List<RemoteData> {
