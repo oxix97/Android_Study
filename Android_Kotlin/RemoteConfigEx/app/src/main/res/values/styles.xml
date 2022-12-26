@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="name_style">
+        <item name="android:textSize">30sp</item>
+        <item name="fontFamily">sans-serif-black</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="price_style">
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+</resources>
