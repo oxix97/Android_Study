@@ -21,6 +21,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
         super.onNewToken(token)
     }
 
+    @RequiresApi(Build.VERSION_CODES.S)
     override fun onMessageReceived(message: RemoteMessage) {
         super.onMessageReceived(message)
         createNotificationChannel()
@@ -46,6 +47,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     }
 
+    @RequiresApi(Build.VERSION_CODES.S)
     private fun createNotification(
         type: NotificationType, title: String?, msg: String?
     ): Notification {
@@ -56,7 +58,6 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
             setContentTitle(title)
             setContentText(msg)
             setContentIntent(pendingIntent)
-            setAutoCancel(true)
             priority = NotificationCompat.PRIORITY_DEFAULT
         }
 

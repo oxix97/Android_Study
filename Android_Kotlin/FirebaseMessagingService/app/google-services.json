@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "395205231987",
+    "project_id": "fcm-test-e2ae5",
+    "storage_bucket": "fcm-test-e2ae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395205231987:android:14e71bae942dcb3a17b106",
+        "android_client_info": {
+          "package_name": "com.example.pushalarmservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395205231987-v1kflvi2rrqilj2jhdfvfvotfcle1jll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9KVg0fm-UVgCEBe1Kn2uUSY9LMXnZl8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395205231987-v1kflvi2rrqilj2jhdfvfvotfcle1jll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
