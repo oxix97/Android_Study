@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.example.reviews.data.BookInfoData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_iv_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:paddingVertical="20dp"
+            app:image_load="@{data.image}"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/item_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:maxLines="1"
+            android:text="@{data.title}"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@id/item_iv_image"
+            app:layout_constraintTop_toTopOf="@id/item_iv_image"
+            tools:text="alskd" />
+
+        <TextView
+            android:id="@+id/item_tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="@{data.description}"
+            app:layout_constraintStart_toStartOf="@id/item_tv_title"
+            app:layout_constraintTop_toBottomOf="@id/item_tv_title"
+            tools:text="askldfjklasdfjklasdfjkl" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
