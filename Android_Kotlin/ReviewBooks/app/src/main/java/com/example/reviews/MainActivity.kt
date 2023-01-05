@@ -1,6 +1,7 @@
 package com.example.reviews
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
@@ -15,6 +16,7 @@ import com.example.reviews.data.BestSellerDto
 import com.example.reviews.data.History
 import com.example.reviews.data.SearchBookDto
 import com.example.reviews.database.AppDatabase
+import com.example.reviews.database.getAppDatabase
 import com.example.reviews.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -35,19 +37,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        initDatabase()
+        db = getAppDatabase(this)
         Timber.plant(Timber.DebugTree())
         initRetrofit()
         initAdapter()
         initView()
-    }
-
-    private fun initDatabase() {
-        db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java,
-            "BookSearchDB",
-        ).build()
     }
 
     private fun initRetrofit() {
@@ -101,7 +95,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initAdapter() {
-        listAdapter = BookListAdapter()
+        listAdapter = BookListAdapter {
+            Intent(this, DetailActivity::class.java).apply {
+                putExtra("bookInfo", it)
+                startActivity(this)
+            }
+        }
         binding.rvContainer.layoutManager = LinearLayoutManager(this)
         binding.rvContainer.adapter = listAdapter
 
@@ -123,9 +122,10 @@ class MainActivity : AppCompatActivity() {
     private fun showHistoryView() {
         Thread {
             val keywords = db.historyDao().getAll().reversed()
+            db.reviewDao()
             runOnUiThread {
                 binding.rvHistoryContainer.isVisible = true
-                historyAdapter.submitList(keywords.orEmpty())
+                historyAdapter.submitList(keywords)
             }
         }.start()
     }

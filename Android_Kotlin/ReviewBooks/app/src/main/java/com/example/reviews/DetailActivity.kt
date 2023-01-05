@@ -7,6 +7,7 @@ import com.bumptech.glide.Glide
 import com.example.reviews.data.BookInfoData
 import com.example.reviews.data.Review
 import com.example.reviews.database.AppDatabase
+import com.example.reviews.database.getAppDatabase
 import com.example.reviews.databinding.ActivityDetailBinding
 import timber.log.Timber
 
@@ -17,7 +18,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        initDatabase()
+        db = getAppDatabase(this)
         initView()
     }
 
@@ -32,6 +33,7 @@ class DetailActivity : AppCompatActivity() {
                 )
                 Timber.e("id save : ${data?.id?.toInt() ?: 0}")
             }.start()
+            finish()
         }
     }
 
@@ -54,13 +56,5 @@ class DetailActivity : AppCompatActivity() {
 
         }.start()
         saveReview(data)
-    }
-
-    private fun initDatabase() {
-        db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java,
-            "BookSearchDB",
-        ).build()
     }
 }
