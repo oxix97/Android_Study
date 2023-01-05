@@ -8,7 +8,9 @@ import com.example.reviews.data.BookInfoData
 import com.example.reviews.databinding.ItemBooksBinding
 import com.example.reviews.util.ListComparator
 
-class BookListAdapter :
+class BookListAdapter(
+    private val clickListener: (BookInfoData) -> Unit
+) :
     ListAdapter<BookInfoData, BookListAdapter.ViewHolder>(ListComparator<BookInfoData>()) {
     inner class ViewHolder(
         private val binding: ItemBooksBinding
@@ -25,6 +27,11 @@ class BookListAdapter :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.onBind(getItem(position))
+        val item = getItem(position)
+        holder.itemView.setOnClickListener {
+            clickListener(item)
+        }
+        holder.onBind(item)
+
     }
 }
