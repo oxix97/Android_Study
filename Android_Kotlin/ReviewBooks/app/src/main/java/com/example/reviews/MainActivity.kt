@@ -1,14 +1,20 @@
 package com.example.reviews
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
 import android.view.MotionEvent
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.room.Room
 import com.example.reviews.adapter.BookListAdapter
+import com.example.reviews.adapter.HistoryAdapter
 import com.example.reviews.api.BookService
 import com.example.reviews.data.BestSellerDto
+import com.example.reviews.data.History
 import com.example.reviews.data.SearchBookDto
+import com.example.reviews.database.AppDatabase
 import com.example.reviews.databinding.ActivityMainBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -20,28 +26,52 @@ import timber.log.Timber
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var listAdapter: BookListAdapter
+    private lateinit var historyAdapter: HistoryAdapter
     private lateinit var service: BookService
+    private lateinit var db: AppDatabase
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        initDatabase()
         Timber.plant(Timber.DebugTree())
         initRetrofit()
         initAdapter()
         initView()
-        keyboardListener()
+    }
+
+    private fun initDatabase() {
+        db = Room.databaseBuilder(
+            applicationContext,
+            AppDatabase::class.java,
+            "BookSearchDB",
+        ).build()
     }
 
     private fun initRetrofit() {
-        val retrofit = Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
+        val retrofit = Retrofit.Builder().baseUrl(BuildConfig.BASE_URL)
+            .addConverterFactory(GsonConverterFactory.create()).build()
         service = retrofit.create(BookService::class.java)
     }
 
+    private fun saveSearchKeyword(keyword: String) {
+        Thread {
+            db.historyDao().insertHistory(History(null, keyword))
+        }.start()
+    }
+
+    @SuppressLint("ClickableViewAccessibility")
     private fun keyboardListener() {
+        binding.etSearchText.setOnTouchListener { v, event ->
+            if (event.action == MotionEvent.ACTION_DOWN) {
+                showHistoryView()
+            }
+            return@setOnTouchListener false
+        }
+
+
         binding.etSearchText.setOnKeyListener { view, keyCode, keyEvent ->
             if (keyCode == KeyEvent.KEYCODE_ENTER && keyEvent.action == MotionEvent.ACTION_DOWN) {
                 searchText(binding.etSearchText.text.toString())
@@ -49,7 +79,6 @@ class MainActivity : AppCompatActivity() {
             }
             return@setOnKeyListener false
         }
-
     }
 
     private fun searchText(keyword: String) {
@@ -61,10 +90,12 @@ class MainActivity : AppCompatActivity() {
                 response.body()?.let {
                     listAdapter.submitList(it.books)
                 }
+                saveSearchKeyword(keyword)
+                hideHistoryView()
             }
 
             override fun onFailure(call: Call<SearchBookDto>, t: Throwable) {
-                TODO("Not yet implemented")
+                hideHistoryView()
             }
         })
     }
@@ -73,6 +104,34 @@ class MainActivity : AppCompatActivity() {
         listAdapter = BookListAdapter()
         binding.rvContainer.layoutManager = LinearLayoutManager(this)
         binding.rvContainer.adapter = listAdapter
+
+        historyAdapter = HistoryAdapter { keyword ->
+            deleteSearchKeyword(keyword)
+        }
+        binding.rvHistoryContainer.layoutManager = LinearLayoutManager(this)
+        binding.rvHistoryContainer.adapter = historyAdapter
+        keyboardListener()
+    }
+
+    private fun deleteSearchKeyword(keyword: String) {
+        Thread {
+            db.historyDao().delete(keyword)
+            showHistoryView()
+        }.start()
+    }
+
+    private fun showHistoryView() {
+        Thread {
+            val keywords = db.historyDao().getAll().reversed()
+            runOnUiThread {
+                binding.rvHistoryContainer.isVisible = true
+                historyAdapter.submitList(keywords.orEmpty())
+            }
+        }.start()
+    }
+
+    private fun hideHistoryView() {
+        binding.rvHistoryContainer.isVisible = false
     }
 
     private fun initView() {
